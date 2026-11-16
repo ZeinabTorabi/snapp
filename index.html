@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>سوپراپلیکیشن اسنپ | تاکسی اینترنتی و سفارش آنلاین</title>
+
+    <meta name="description" content="معرفی خدمات اسنپ؛ تاکسی اینترنتی، سفارش غذا، خرید سوپرمارکتی و رزرو بلیت سفر.">
+
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="سوپراپلیکیشن اسنپ">
+    <meta property="og:description" content="تمام خدمات مورد نیاز شما در سوپراپلیکیشن اسنپ.">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="./img/icon/Icon.webp" type="image/webp">
+    <link rel="preload" as="font"
+        href="./fonts/webfonts/Vazirmatn-Regular.woff2"
+        type="font/woff2" crossorigin>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/variables.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/components.css">
+    <link rel="stylesheet" href="./css/sections.css">
+
+</head>
+
+
+<body>
+    <a class="skip-link" href="#main">پرش به محتوای اصلی</a>
+
+    <div class="promo-bar">
+        <div class="container promo-bar__inner">
+            <p class="promo-bar__text">اولین سفرت را با ۲۰٪ تخفیف شروع کن!</p>
+            <a class="promo-bar__link" href="#">دریافت کد تخفیف</a>
+        </div>
+    </div>
+
+    <header class="site-header">
+        <div class="container site-header__inner">
+            <a class="site-header__logo" href="./" aria-label="اسنپ، صفحه اصلی">
+                <img class="logo" src="./img/snappTextLogo.webp" alt="اسنپ" height="32">
+            </a>
+
+            <input class="site-header__toggle visually-hidden" type="checkbox" id="nav-toggle"
+                aria-label="باز و بسته کردن منو" aria-controls="main-nav">
+            <label class="site-header__burger" for="nav-toggle" aria-hidden="true">
+                <span></span><span></span><span></span>
+            </label>
+
+            <nav class="main-nav" id="main-nav" aria-label="منوی اصلی">
+                <div class="main-nav__item">
+                    <button class="main-nav__toggle" type="button">سوپراپ اسنپ</button>
+                    <ul class="main-nav__submenu">
+                        <li><a class="main-nav__submenu-link" href="#">درخواست تاکسی</a></li>
+                        <li><a class="main-nav__submenu-link" href="#">پیک موتوری</a></li>
+                        <li><a class="main-nav__submenu-link" href="#">سفارش آنلاین غذا</a></li>
+                        <li><a class="main-nav__submenu-link" href="#">سوپر مارکت آنلاین</a></li>
+                        <li><a class="main-nav__submenu-link" href="#">اسنپ مارکت</a></li>
+                        <li><a class="main-nav__submenu-link" href="#">بلیط هواپیما اسنپ</a></li>
+                        <li><a class="main-nav__submenu-link" href="#">اسنپ هتل</a></li>
+                        <li><a class="main-nav__submenu-link" href="#">رزرو بلیط قطار</a></li>
+                        <li><a class="main-nav__submenu-link" href="#">رزرو بلیط اتوبوس</a></li>
+                        <li><a class="main-nav__submenu-link" href="#">درخواست وانت بار</a></li>
+                        <li><a class="main-nav__submenu-link" href="#">خدمات اسباب کشی</a></li>
+                        <li><a class="main-nav__submenu-link" href="#">فروشگاه اسنپ</a></li>
+                        <li><a class="main-nav__submenu-link" href="#">اسنپ بیمه</a></li>
+                        <li><a class="main-nav__submenu-link" href="#">پزشک و مشاور</a></li>
+                        <li><a class="main-nav__submenu-link" href="#">اسنپ پرو</a></li>
+                        <li><a class="main-nav__submenu-link" href="#">اسنپ کلاب</a></li>
+                    </ul>
+                </div>
+                <a class="main-nav__link" href="#driver-registration">ثبت نام راننده اسنپ</a>
+                <a class="main-nav__link" href="#services">اسنپ پی (سرویس اعتباری)</a>
+                <a class="main-nav__link" href="#driver-benefits">باشگاه رانندگان</a>
+                <a class="main-nav__link" href="#">پنل سازمانی</a>
+                <a class="main-nav__link" href="#blog">بلاگ</a>
+
+                <div class="main-nav__item">
+                    <button class="main-nav__toggle" type="button">درباره اسنپ</button>
+                    <ul class="main-nav__submenu">
+                        <li><a class="main-nav__submenu-link" href="#">فرصت‌های شغلی</a></li>
+                        <li><a class="main-nav__submenu-link" href="#">درباره ما</a></li>
+                        <li><a class="main-nav__submenu-link" href="#">تماس با ما</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+
+        <section class="hero">
+            <div class="container hero__container">
+                <div class="hero__content">
+                    <h1 class="hero__title">تجربه‌ی زندگی راحت‌تر، سریع‌تر و به‌صرفه‌تر با سوپراپلیکیشن اسنپ!</h1>
+                    <p class="hero__text">از درخواست خودرو تا سفارش غذا، خرید سوپرمارکتی، رزرو بلیت سفر و... را با اسنپ انجام دهید.</p>
+                    <div class="hero__actions">
+                        <a class="btn btn--primary" href="#">
+                            <svg class="btn__icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+                                <path d="M2 12h20" />
+                            </svg>
+                            ورود به وب اپلیکیشن
+                        </a>
+                        <a class="btn btn--outline" href="#">
+                            <svg class="btn__icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                                <path fill="currentColor"
+                                    d="M352 96C352 78.3 337.7 64 320 64C302.3 64 288 78.3 288 96L288 306.7L246.6 265.3C234.1 252.8 213.8 252.8 201.3 265.3C188.8 277.8 188.8 298.1 201.3 310.6L297.3 406.6C309.8 419.1 330.1 419.1 342.6 406.6L438.6 310.6C451.1 298.1 451.1 277.8 438.6 265.3C426.1 252.8 405.8 252.8 393.3 265.3L352 306.7L352 96zM160 384C124.7 384 96 412.7 96 448L96 480C96 515.3 124.7 544 160 544L480 544C515.3 544 544 515.3 544 480L544 448C544 412.7 515.3 384 480 384L433.1 384L376.5 440.6C345.3 471.8 294.6 471.8 263.4 440.6L206.9 384L160 384zM464 440C477.3 440 488 450.7 488 464C488 477.3 477.3 488 464 488C450.7 488 440 477.3 440 464C440 450.7 450.7 440 464 440z" />
+                            </svg>
+                            دانلود برنامه
+                        </a>
+                    </div>
+                </div>
+                <div class="hero__media">
+                    <img class="hero__img" src="./img/newheroimagee.webp" alt="نمایی از سوپراپلیکیشن اسنپ"
+                        width="440" height="352" fetchpriority="high" decoding="async">
+                </div>
+            </div>
+        </section>
+
+        <section class="services" id="services" aria-labelledby="services-title">
+            <div class="container">
+                <h2 class="services__title section-title section-title--strong" id="services-title">یک اپلیکیشن، برای تمام نیازها</h2>
+
+                <div class="services__tabs" role="radiogroup" aria-label="دسته‌بندی خدمات">
+                    <label class="services__tab">
+                        <input class="services__input visually-hidden" type="radio" name="services-tab" id="tab-suggested" checked>
+                        <img class="services__tab-img" src="./img/star.webp" alt="" width="64" height="64">
+                        <span class="services__tab-label">پیشنهادی</span>
+                    </label>
+                    <label class="services__tab">
+                        <input class="services__input visually-hidden" type="radio" name="services-tab" id="tab-transport">
+                        <img class="services__tab-img" src="./img/car.webp" alt="" width="64" height="64">
+                        <span class="services__tab-label">حمل و نقل</span>
+                    </label>
+                    <label class="services__tab">
+                        <input class="services__input visually-hidden" type="radio" name="services-tab" id="tab-tourism">
+                        <img class="services__tab-img" src="./img/plane.webp" alt="" width="64" height="64">
+                        <span class="services__tab-label">گردشگری</span>
+                    </label>
+                    <label class="services__tab">
+                        <input class="services__input visually-hidden" type="radio" name="services-tab" id="tab-food">
+                        <img class="services__tab-img" src="./img/iconCutlery3d.webp" alt="" width="64" height="64">
+                        <span class="services__tab-label">سرویس غذا</span>
+                    </label>
+                    <label class="services__tab">
+                        <input class="services__input visually-hidden" type="radio" name="services-tab" id="tab-pay">
+                        <img class="services__tab-img" src="./img/wallet.webp" alt="" width="64" height="64">
+                        <span class="services__tab-label">سرویس اسنپ پی</span>
+                    </label>
+                    <label class="services__tab">
+                        <input class="services__input visually-hidden" type="radio" name="services-tab" id="tab-insurance">
+                        <img class="services__tab-img" src="./img/shield.webp" alt="" width="64" height="64">
+                        <span class="services__tab-label">سرویس بیمه</span>
+                    </label>
+                    <label class="services__tab">
+                        <input class="services__input visually-hidden" type="radio" name="services-tab" id="tab-view-all">
+                        <span class="services__tab-count" aria-hidden="true">۱۰+</span>
+                        <span class="services__tab-label">مشاهده همه</span>
+                    </label>
+                </div>
+
+                <div class="services__panel services__panel--suggested">
+                    <a class="service-card" href="#">
+                        <div class="service-card__body">
+                            <h3 class="service-card__title">تاکسی اینترنتی</h3>
+                            <p class="service-card__text">درخواست آنلاین خودرو</p>
+                        </div>
+                        <img class="service-card__img" src="./img/car.webp" alt="" width="64" height="64" loading="lazy" decoding="async">
+                    </a>
+                    <a class="service-card" href="#">
+                        <div class="service-card__body">
+                            <h3 class="service-card__title">اسنپ فود</h3>
+                            <p class="service-card__text">سفارش آنلاین غذا، نان و شیرینی</p>
+                        </div>
+                        <img class="service-card__img" src="./img/icon/burger.webp" alt="" width="64" height="64" loading="lazy" decoding="async">
+                    </a>
+                    <a class="service-card" href="#">
+                        <div class="service-card__body">
+                            <h3 class="service-card__title">سوپر مارکت آنلاین اسنپ</h3>
+                            <p class="service-card__text">تهیه اقلام روزانه با اسنپ مارکت</p>
+                        </div>
+                        <img class="service-card__img" src="./img/icon/iconSupermarket3d.webp" alt="" width="64" height="64" loading="lazy" decoding="async">
+                    </a>
+                    <a class="service-card" href="#">
+                        <div class="service-card__body">
+                            <h3 class="service-card__title">پیک موتوری</h3>
+                            <p class="service-card__text">حمل و نقل انواع بسته</p>
+                        </div>
+                        <img class="service-card__img" src="./img/icon/iconCourierScooter3d.webp" alt="" width="64" height="64" loading="lazy" decoding="async">
+                    </a>
+                    <a class="service-card" href="#">
+                        <div class="service-card__body">
+                            <h3 class="service-card__title">اسنپ پی</h3>
+                            <p class="service-card__text">سرویس اعتباری اسنپ</p>
+                        </div>
+                        <img class="service-card__img" src="./img/wallet.webp" alt="" width="64" height="64" loading="lazy" decoding="async">
+                    </a>
+                    <a class="service-card" href="#">
+                        <div class="service-card__body">
+                            <h3 class="service-card__title">خرید بلیط هواپیما</h3>
+                            <p class="service-card__text">سرویس بلیط پرواز اسنپ</p>
+                        </div>
+                        <img class="service-card__img" src="./img/plane.webp" alt="" width="64" height="64" loading="lazy" decoding="async">
+                    </a>
+                    <a class="service-card" href="#">
+                        <div class="service-card__body">
+                            <h3 class="service-card__title">رزرو هتل</h3>
+                            <p class="service-card__text">رزرو آنلاین هتل</p>
+                        </div>
+                        <img class="service-card__img" src="./img/icon/iconHotelbooking3d.webp" alt="" width="64" height="64" loading="lazy" decoding="async">
+                    </a>
+                    <a class="service-card" href="#">
+                        <div class="service-card__body">
+                            <h3 class="service-card__title">اسنپ بیمه</h3>
+                            <p class="service-card__text">خرید آنلاین با اسنپ بیمه</p>
+                        </div>
+                        <img class="service-card__img" src="./img/shield.webp" alt="" width="64" height="64" loading="lazy" decoding="async">
+                    </a>
+                    <a class="service-card" href="#">
+                        <div class="service-card__body">
+                            <h3 class="service-card__title">ثبت نام راننده</h3>
+                            <p class="service-card__text">ثبت نام تاکسی اینترنتی اسنپ</p>
+                        </div>
+                        <img class="service-card__img" src="./img/icon/iconDriverRegistration3d.webp" alt="" width="64" height="64" loading="lazy" decoding="async">
+                    </a>
+                </div>
+
+                <div class="services__panel services__panel--transport">
+                    <a class="service-card" href="#">
+                        <div class="service-card__body">
+                            <h3 class="service-card__title">تاکسی اینترنتی</h3>
+                            <p class="service-card__text">درخواست آنلاین خودرو</p>
+                        </div>
+                        <img class="service-card__img" src="./img/car.webp" alt="" width="64" height="64" loading="lazy" decoding="async">
+                    </a>
+                    <a class="service-card" href="#">
+                        <div class="service-card__body">
+                            <h3 class="service-card__title">پیک موتوری</h3>
+                            <p class="service-card__text">حمل و نقل انواع بسته</p>
+                        </div>
+                        <img class="service-card__img" src="./img/icon/iconCourierScooter3d.webp" alt="" width="64" height="64" loading="lazy" decoding="async">
+                    </a>
+                    <a class="service-card" href="#">
+                        <div class="service-card__body">
+                            <h3 class="service-card__title">درخواست وانت بار</h3>
+                            <p class="service-card__text">حمل و نقل انواع بار</p>
+                        </div>
+                        <img class="service-card__img" src="./img/icon/iconPickup.webp" alt="" width="64" height="64" loading="lazy" decoding="async">
+                    </a>
+                    <a class="service-card" href="#">
+                        <div class="service-card__body">
+                            <h3 class="service-card__title">اسباب کشی منزل</h3>
+                            <p class="service-card__text">خدمات اسباب کشی</p>
+                        </div>
+                        <img class="service-card__img" src="./img/icon/iconMovingTruck3d.webp" alt="" width="64" height="64" loading="lazy" decoding="async">
+                    </a>
+                    <a class="service-card" href="#">
+                        <div class="service-card__body">
+                            <h3 class="service-card__title">ثبت نام راننده</h3>
+                            <p class="service-card__text">ثبت نام تاکسی اینترنتی اسنپ</p>
+                        </div>
+                        <img class="service-card__img" src="./img/icon/iconDriverRegistration3d.webp" alt="" width="64" height="64" loading="lazy" decoding="async">
+                    </a>
+                </div>
+
+                <div class="services__panel services__panel--tourism">
+                    <a class="service-card" href="#">
+                        <div class="service-card__body">
+                            <h3 class="service-card__title">خرید بلیط هواپیما</h3>
+                            <p class="service-card__text">سرویس بلیط پرواز اسنپ</p>
+                        </div>
+                        <img class="service-card__img" src="./img/icon/domesticFlight.webp" alt="" width="64" height="64" loading="lazy" decoding="async">
+                    </a>
+                    <a class="service-card" href="#">
+                        <div class="service-card__body">
+                            <h3 class="service-card__title">بلیط هواپیما خارجی</h3>
+                            <p class="service-card__text">خرید بلیط پرواز خارجی</p>
+                        </div>
+                        <img class="service-card__img" src="./img/icon/internationalFlight.webp" alt="" width="64" height="64" loading="lazy" decoding="async">
+                    </a>
+                    <a class="service-card" href="#">
+                        <div class="service-card__body">
+                            <h3 class="service-card__title">خرید بلیط قطار</h3>
+                            <p class="service-card__text">سرویس بلیط قطار اسنپ</p>
+                        </div>
+                        <img class="service-card__img" src="./img/icon/trainTicket.webp" alt="" width="64" height="64" loading="lazy" decoding="async">
+                    </a>
+                    <a class="service-card" href="#">
+                        <div class="service-card__body">
+                            <h3 class="service-card__title">خرید بلیط اتوبوس</h3>
+                            <p class="service-card__text">سرویس بلیط اتوبوس اسنپ</p>
+                        </div>
+                        <img class="service-card__img" src="./img/icon/busTicket.webp" alt="" width="64" height="64" loading="lazy" decoding="async">
+                    </a>
+                    <a class="service-card" href="#">
+                        <div class="service-card__body">
+                            <h3 class="service-card__title">رزرو هتل</h3>
+                            <p class="service-card__text">رزرو آنلاین هتل</p>
+                        </div>
+                        <img class="service-card__img" src="./img/icon/hotelReservation.webp" alt="" width="64" height="64" loading="lazy" decoding="async">
+                    </a>
+                    <a class="service-card" href="#">
+                        <div class="service-card__body">
+                            <h3 class="service-card__title">رزرو اقامتگاه</h3>
+                            <p class="service-card__text">سرویس آنلاین ویلا و اقامتگاه</p>
+                        </div>
+                        <img class="service-card__img" src="./img/icon/domesticFlight.webp" alt="" width="64" height="64" loading="lazy" decoding="async">
+                    </a>
+                </div>
+
+                <div class="services__panel services__panel--food">
+                    <a class="service-card" href="#">
+                        <div class="service-card__body"><h3 class="service-card__title">سفارش غذا</h3></div>
+                        <img class="service-card__img" src="./img/icon/burger.webp" alt="" width="64" height="64" loading="lazy" decoding="async">
+                    </a>
+                    <a class="service-card" href="#">
+                        <div class="service-card__body"><h3 class="service-card__title">سفارش نان</h3></div>
+                        <img class="service-card__img" src="./img/icon/breadChips.webp" alt="" width="64" height="64" loading="lazy" decoding="async">
+                    </a>
+                    <a class="service-card" href="#">
+                        <div class="service-card__body"><h3 class="service-card__title">سفارش شیرینی و کیک</h3></div>
+                        <img class="service-card__img" src="./img/icon/cakestrawberry.webp" alt="" width="64" height="64" loading="lazy" decoding="async">
+                    </a>
+                    <a class="service-card" href="#">
+                        <div class="service-card__body"><h3 class="service-card__title">محصولات پروتئینی</h3></div>
+                        <img class="service-card__img" src="./img/icon/meatproducts.webp" alt="" width="64" height="64" loading="lazy" decoding="async">
+                    </a>
+                    <a class="service-card" href="#">
+                        <div class="service-card__body"><h3 class="service-card__title">سفارش آبمیوه</h3></div>
+                        <img class="service-card__img" src="./img/icon/iceCreamandJuice.webp" alt="" width="64" height="64" loading="lazy" decoding="async">
+                    </a>
+                    <a class="service-card" href="#">
+                        <div class="service-card__body"><h3 class="service-card__title">خرید میوه</h3></div>
+                        <img class="service-card__img" src="./img/icon/grocerybag.webp" alt="" width="64" height="64" loading="lazy" decoding="async">
+                    </a>
+                    <a class="service-card" href="#">
+                        <div class="service-card__body"><h3 class="service-card__title">سوپر مارکت</h3></div>
+                        <img class="service-card__img" src="./img/icon/iconSupermarket3d.webp" alt="" width="64" height="64" loading="lazy" decoding="async">
+                    </a>
+                    <a class="service-card" href="#">
+                        <div class="service-card__body"><h3 class="service-card__title">سفارش آجیل</h3></div>
+                        <img class="service-card__img" src="./img/icon/nuts.webp" alt="" width="64" height="64" loading="lazy" decoding="async">
+                    </a>
+                    <a class="service-card" href="#">
+                        <div class="service-card__body"><h3 class="service-card__title">سفارش گل</h3></div>
+                        <img class="service-card__img" src="./img/icon/rosebouquet.webp" alt="" width="64" height="64" loading="lazy" decoding="async">
+                    </a>
+                    <a class="service-card" href="#">
+                        <div class="service-card__body"><h3 class="service-card__title">کافی شاپ آنلاین</h3></div>
+                        <img class="service-card__img" src="./img/icon/onlinecafelatte.webp" alt="" width="64" height="64" loading="lazy" decoding="async">
+                    </a>
+                    <a class="service-card" href="#">
+                        <div class="service-card__body"><h3 class="service-card__title">عطاری آنلاین</h3></div>
+                        <img class="service-card__img" src="./img/icon/legumes.webp" alt="" width="64" height="64" loading="lazy" decoding="async">
+                    </a>
+                    <a class="service-card" href="#">
+                        <div class="service-card__body"><h3 class="service-card__title">تره بار</h3></div>
+                        <img class="service-card__img" src="./img/icon/supermarketbasket.webp" alt="" width="64" height="64" loading="lazy" decoding="async">
+                    </a>
+                    <a class="service-card" href="#">
+                        <div class="service-card__body"><h3 class="service-card__title">قهوه و شکلات</h3></div>
+                        <img class="service-card__img" src="./img/icon/chocolate.webp" alt="" width="64" height="64" loading="lazy" decoding="async">
+                    </a>
+                    <a class="service-card" href="#">
+                        <div class="service-card__body"><h3 class="service-card__title">پت شاپ</h3></div>
+                        <img class="service-card__img" src="./img/icon/Pet-Shop.webp" alt="" width="64" height="64" loading="lazy" decoding="async">
+                    </a>
+                    <a class="service-card" href="#">
+                        <div class="service-card__body"><h3 class="service-card__title">لبنیات محلی</h3></div>
+                        <img class="service-card__img" src="./img/icon/localdairy.webp" alt="" width="64" height="64" loading="lazy" decoding="async">
+                    </a>
+                    <a class="service-card" href="#">
+                        <div class="service-card__body"><h3 class="service-card__title">غذا سازمانی</h3></div>
+                        <img class="service-card__img" src="./img/icon/combined.webp" alt="" width="64" height="64" loading="lazy" decoding="async">
+                    </a>
+                </div>
+
+                <div class="services__panel services__panel--pay">
+                    <a class="service-card" href="#">
+                        <div class="service-card__body"><h3 class="service-card__title">سرویس ۴ قسطه</h3></div>
+                        <img class="service-card__img" src="./img/icon/fourinstallment.webp" alt="" width="64" height="64" loading="lazy" decoding="async">
+                    </a>
+                    <a class="service-card" href="#">
+                        <div class="service-card__body"><h3 class="service-card__title">وام اسنپ پی</h3></div>
+                        <img class="service-card__img" src="./img/icon/snapppayloan.webp" alt="" width="64" height="64" loading="lazy" decoding="async">
+                    </a>
+                    <a class="service-card" href="#">
+                        <div class="service-card__body"><h3 class="service-card__title">اعتبار ماهانه</h3></div>
+                        <img class="service-card__img" src="./img/icon/monthly-credit.webp" alt="" width="64" height="64" loading="lazy" decoding="async">
+                    </a>
+                    <a class="service-card" href="#">
+                        <div class="service-card__body"><h3 class="service-card__title">خرید حضوری اعتباری</h3></div>
+                        <img class="service-card__img" src="./img/icon/instorecreditpurchase.webp" alt="" width="64" height="64" loading="lazy" decoding="async">
+                    </a>
+                    <a class="service-card" href="#">
+                        <div class="service-card__body"><h3 class="service-card__title">سرویس اعتباری سازمانی</h3></div>
+                        <img class="service-card__img" src="./img/icon/orgCreditservice.webp" alt="" width="64" height="64" loading="lazy" decoding="async">
+                    </a>
+                </div>
+
+                <div class="services__panel services__panel--insurance">
+                    <a class="service-card" href="#">
+                        <div class="service-card__body"><h3 class="service-card__title">بیمه شخص ثالث</h3></div>
+                        <img class="service-card__img" src="./img/icon/bimeh.webp" alt="" width="64" height="64" loading="lazy" decoding="async">
+                    </a>
+                    <a class="service-card" href="#">
+                        <div class="service-card__body"><h3 class="service-card__title">بیمه بدنه</h3></div>
+                        <img class="service-card__img" src="./img/icon/carMimeh.webp" alt="" width="64" height="64" loading="lazy" decoding="async">
+                    </a>
+                    <a class="service-card" href="#">
+                        <div class="service-card__body"><h3 class="service-card__title">بیمه موتور سیکلت</h3></div>
+                        <img class="service-card__img" src="./img/icon/Motor.webp" alt="" width="64" height="64" loading="lazy" decoding="async">
+                    </a>
+                    <a class="service-card" href="#">
+                        <div class="service-card__body"><h3 class="service-card__title">بیمه موبایل و تبلت</h3></div>
+                        <img class="service-card__img" src="./img/icon/mobile.webp" alt="" width="64" height="64" loading="lazy" decoding="async">
+                    </a>
+                    <a class="service-card" href="#">
+                        <div class="service-card__body"><h3 class="service-card__title">خرید بیمه قسطی</h3></div>
+                        <img class="service-card__img" src="./img/icon/hfeh.webp" alt="" width="64" height="64" loading="lazy" decoding="async">
+                    </a>
+                    <a class="service-card" href="#">
+                        <div class="service-card__body"><h3 class="service-card__title">استعلام بیمه شخص ثالث</h3></div>
+                        <img class="service-card__img" src="./img/icon/zarehbin.webp" alt="" width="64" height="64" loading="lazy" decoding="async">
+                    </a>
+                </div>
+
+                <div class="services__panel services__panel--view-all">
+                    <a class="service-card" href="#">
+                        <div class="service-card__body">
+                            <h3 class="service-card__title">فروشگاه اسنپ</h3>
+                            <p class="service-card__text">فروشگاه اینترنتی اسنپ</p>
+                        </div>
+                        <img class="service-card__img" src="./img/icon/SlWPbremovebgpreview.webp" alt="" width="64" height="64" loading="lazy" decoding="async">
+                    </a>
+                    <a class="service-card" href="#">
+                        <div class="service-card__body">
+                            <h3 class="service-card__title">پزشک و مشاور</h3>
+                            <p class="service-card__text">درمان با اسنپ</p>
+                        </div>
+                        <img class="service-card__img" src="./img/icon/n4CN.webp" alt="" width="64" height="64" loading="lazy" decoding="async">
+                    </a>
+                    <a class="service-card" href="#">
+                        <div class="service-card__body">
+                            <h3 class="service-card__title">داروخانه</h3>
+                            <p class="service-card__text">داروخانه آنلاین اسنپ</p>
+                        </div>
+                        <img class="service-card__img" src="./img/icon/zOORt1.webp" alt="" width="64" height="64" loading="lazy" decoding="async">
+                    </a>
+                    <a class="service-card" href="#">
+                        <div class="service-card__body">
+                            <h3 class="service-card__title">اسنپ کلاب</h3>
+                            <p class="service-card__text">باشگاه مشتریان اسنپ</p>
+                        </div>
+                        <img class="service-card__img" src="./img/icon/1Ekp2removebgpreview.webp" alt="" width="64" height="64" loading="lazy" decoding="async">
+                    </a>
+                    <a class="service-card" href="#">
+                        <div class="service-card__body">
+                            <h3 class="service-card__title">سرمایه‌گذاری</h3>
+                            <p class="service-card__text">سرمایه‌گذاری پرسود و کم‌ریسک با اسنپ</p>
+                        </div>
+                        <img class="service-card__img" src="./img/icon/tLAVfremovebgpreview.webp" alt="" width="64" height="64" loading="lazy" decoding="async">
+                    </a>
+                    <a class="service-card" href="#">
+                        <div class="service-card__body">
+                            <h3 class="service-card__title">خرید شارژ</h3>
+                            <p class="service-card__text">خرید آنلاین شارژ</p>
+                        </div>
+                        <img class="service-card__img" src="./img/icon/0KumHremovebgpreview.webp" alt="" width="64" height="64" loading="lazy" decoding="async">
+                    </a>
+                    <a class="service-card" href="#">
+                        <div class="service-card__body">
+                            <h3 class="service-card__title">خرید بسته اینترنت</h3>
+                            <p class="service-card__text">خرید بسته اینترنت</p>
+                        </div>
+                        <img class="service-card__img" src="./img/icon/0KumHremovebgpreview.webp" alt="" width="64" height="64" loading="lazy" decoding="async">
+                    </a>
+                    <a class="service-card" href="#">
+                        <div class="service-card__body">
+                            <h3 class="service-card__title">اسنپ پرو</h3>
+                            <p class="service-card__text">اشتراک حرفه‌ای اسنپ</p>
+                        </div>
+                        <img class="service-card__img" src="./img/icon/74Vmbremovebgpreview.webp" alt="" width="64" height="64" loading="lazy" decoding="async">
+                    </a>
+                    <a class="service-card" href="#">
+                        <div class="service-card__body">
+                            <h3 class="service-card__title">فودرو</h3>
+                            <p class="service-card__text">بدون تخفیف رستوران نرو</p>
+                        </div>
+                        <img class="service-card__img" src="./img/icon/sMcM4removebgpreview.webp" alt="" width="64" height="64" loading="lazy" decoding="async">
+                    </a>
+                    <a class="service-card" href="#">
+                        <div class="service-card__body">
+                            <h3 class="service-card__title">اسنپ کارپی</h3>
+                            <p class="service-card__text">استعلام و پرداخت‌های خودرو</p>
+                        </div>
+                        <img class="service-card__img" src="./img/car.webp" alt="" width="64" height="64" loading="lazy" decoding="async">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="banner" aria-label="تبلیغات اسنپ">
+            <div class="container">
+                <input class="banner__input visually-hidden" type="radio" name="banner-slide" id="slide-1" aria-label="اسلاید ۱" checked>
+                <input class="banner__input visually-hidden" type="radio" name="banner-slide" id="slide-2" aria-label="اسلاید ۲">
+                <input class="banner__input visually-hidden" type="radio" name="banner-slide" id="slide-3" aria-label="اسلاید ۳">
+                <input class="banner__input visually-hidden" type="radio" name="banner-slide" id="slide-4" aria-label="اسلاید ۴">
+                <input class="banner__input visually-hidden" type="radio" name="banner-slide" id="slide-5" aria-label="اسلاید ۵">
+                <input class="banner__input visually-hidden" type="radio" name="banner-slide" id="slide-6" aria-label="اسلاید ۶">
+
+                <a class="banner__slide banner__slide--1" href="#">
+                    <img class="banner__img" src="./img/banner/HotelRtl.webp" alt="رزرو آنلاین هتل با اسنپ" width="1440" height="475" decoding="async">
+                </a>
+                <a class="banner__slide banner__slide--2" href="#">
+                    <img class="banner__img" src="./img/banner/investmentBannerNew.webp" alt="سرمایه‌گذاری با اسنپ" width="1440" height="475" loading="lazy" decoding="async">
+                </a>
+                <a class="banner__slide banner__slide--3" href="#">
+                    <img class="banner__img" src="./img/banner/FlightRtl.webp" alt="خرید آنلاین بلیط هواپیما با اسنپ" width="1440" height="475" loading="lazy" decoding="async">
+                </a>
+                <a class="banner__slide banner__slide--4" href="#">
+                    <img class="banner__img" src="./img/banner/taxidiscountslider.webp" alt="تخفیف سفر با تاکسی اینترنتی اسنپ" width="1440" height="475" loading="lazy" decoding="async">
+                </a>
+                <a class="banner__slide banner__slide--5" href="#">
+                    <img class="banner__img" src="./img/banner/Food.webp" alt="سفارش آنلاین غذا از اسنپ فود" width="1440" height="475" loading="lazy" decoding="async">
+                </a>
+                <a class="banner__slide banner__slide--6" href="#">
+                    <img class="banner__img" src="./img/banner/Driver.webp" alt="ثبت‌نام رانندگان اسنپ" width="1440" height="475" loading="lazy" decoding="async">
+                </a>
+
+                <div class="banner__dots">
+                    <label class="banner__dot" for="slide-1" aria-label="اسلاید ۱"></label>
+                    <label class="banner__dot" for="slide-2" aria-label="اسلاید ۲"></label>
+                    <label class="banner__dot" for="slide-3" aria-label="اسلاید ۳"></label>
+                    <label class="banner__dot" for="slide-4" aria-label="اسلاید ۴"></label>
+                    <label class="banner__dot" for="slide-5" aria-label="اسلاید ۵"></label>
+                    <label class="banner__dot" for="slide-6" aria-label="اسلاید ۶"></label>
+                </div>
+            </div>
+        </section>
+
+        <section class="registration-promo" id="driver-registration" aria-labelledby="registration-title">
+            <div class="container registration-promo__inner">
+                <h2 class="registration-promo__title" id="registration-title">در کمتر از ۱۰ دقیقه ثبت‌نام کنید و به ناوگان اسنپ بپیوندید.</h2>
+                <p class="registration-promo__text">بدون نیاز به مراجعه‌ی حضوری، از طریق این صفحه، تمام مراحل ثبت‌نام را اینترنتی انجام دهید</p>
+                <a class="btn btn--primary btn--sm registration-promo__btn" href="#">ثبت‌نام رانندگان</a>
+
+                <div class="registration-promo__video">
+                    <video class="promo-video" controls playsinline preload="none" controlslist="nodownload"
+                        poster="https://web-cdn.snapp.ir/snappir-marketing/images/homepage/jazbcovernew.webp"
+                        aria-label="مزایای پیوستن به ناوگان اسنپ">
+                        <source src="https://web-cdn.snapp.ir/snappir-marketing/images/homepage/jazbranandeh1.mp4" type="video/mp4">
+                        مرورگر شما از پخش ویدیو پشتیبانی نمی‌کند.
+                    </video>
+                </div>
+
+                <div class="benefits" id="driver-benefits">
+                    <h3 class="visually-hidden">مزایای همکاری با اسنپ</h3>
+                    <div class="benefits__list">
+                        <article class="benefit-card">
+                            <img class="benefit-card__img" src="./img/icon/monthlyRewards.webp" alt="" width="64" height="64" loading="lazy" decoding="async">
+                            <h4 class="benefit-card__title">درآمد تضمینی + پاداش‌های ماهانه و هفتگی</h4>
+                            <p class="benefit-card__text">با فعالیت در ناوگان اسنپ، علاوه بر کسب درآمد مستمر و امکان تسویه در لحظه می‌توانید با شرکت در طرح‌های تشویقی مختلف، درآمد خود را افزایش دهید.</p>
+                        </article>
+                        <article class="benefit-card">
+                            <img class="benefit-card__img" src="./img/icon/flexibleHours.webp" alt="" width="64" height="64" loading="lazy" decoding="async">
+                            <h4 class="benefit-card__title">ساعت کاری دلخواه</h4>
+                            <p class="benefit-card__text">فعالیت در ناوگان اسنپ محدودیت زمانی ندارد و می‌توانید فعالیت خود را در هر ساعت از شبانه‌روز و متناسب با برنامه‌ی زندگی‌تان شخصی‌سازی کنید.</p>
+                        </article>
+                        <article class="benefit-card">
+                            <img class="benefit-card__img" src="./img/icon/driverBenefits.webp" alt="" width="64" height="64" loading="lazy" decoding="async">
+                            <h4 class="benefit-card__title">مزایا و خدمات باشگاه رانندگان</h4>
+                            <p class="benefit-card__text">در باشگاه رانندگان اسنپ می‌توانید از تسهیلات و خدمات متنوعی از جمله خدمات خودرویی، خدمات درمانی و همچنین خدمات رفاهی و آموزشی بهره‌مند شوید.</p>
+                        </article>
+                        <article class="benefit-card">
+                            <img class="benefit-card__img" src="./img/icon/carfix.webp" alt="" width="64" height="64" loading="lazy" decoding="async">
+                            <h4 class="benefit-card__title">کارفیکس</h4>
+                            <p class="benefit-card__text">باشگاه رانندگان اسنپ به‌تازگی سرویس جدید «اسنپ کارفیکس» را برای سهولت دسترسی کاربران راننده به انواع خدمات خودرویی راه‌اندازی کرده است.</p>
+                        </article>
+                        <article class="benefit-card">
+                            <img class="benefit-card__img" src="./img/icon/tripSafety.webp" alt="" width="64" height="64" loading="lazy" decoding="async">
+                            <h4 class="benefit-card__title">امنیت سفر کاربران راننده در اسنپ</h4>
+                            <p class="benefit-card__text">اسنپ با ارائه سرویس امنیت سفر در اپلیکیشن رانندگان و بهبود مستمر امکانات امنیتی این سرویس، تلاش می‌کند تجربه سفر با اسنپ برای کاربران راننده امن و مطمئن باشد.</p>
+                        </article>
+                        <article class="benefit-card">
+                            <img class="benefit-card__img" src="./img/icon/support24h.webp" alt="" width="64" height="64" loading="lazy" decoding="async">
+                            <h4 class="benefit-card__title">پشتیبانی ۲۴ ساعته و سریع</h4>
+                            <p class="benefit-card__text">تیم پشتیبانی اسنپ در تمامی ساعت‌های شبانه‌روز پاسخگوی سوال‌ها و مشکلات کاربران راننده است. بخش «پشتیبانی» در اپلیکیشن رانندگان، سریع‌ترین راه ارتباطی شما با تیم پشتیبانی اسنپ است.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="promo-gallery" aria-labelledby="gallery-food-title">
+            <div class="container">
+                <h2 class="promo-gallery__title section-title" id="gallery-food-title">سفارش آنلاین غذا با اسنپ فود</h2>
+                <div class="promo-gallery__list">
+                    <article class="promo-card">
+                        <img class="promo-card__img" src="./img/banner/promo-food-0.webp" alt="سفارش آنلاین غذا از اسنپ فود" loading="lazy" decoding="async">
+                        <div class="promo-card__body">
+                            <img class="promo-card__logo" src="./img/card/foodS.webp" alt="" width="50" height="48" loading="lazy" decoding="async">
+                            <p class="promo-card__text">اسنپ فود؛ سفارش آنلاین غذا</p>
+                            <a class="btn btn--outline btn--sm promo-card__btn" href="#">سفارش دهید</a>
+                        </div>
+                    </article>
+                    <article class="promo-card">
+                        <img class="promo-card__img" src="./img/banner/promo-food-1.webp" alt="سفارش پیتزا از اسنپ فود" loading="lazy" decoding="async">
+                        <div class="promo-card__body">
+                            <img class="promo-card__logo" src="./img/card/foodS.webp" alt="" width="50" height="48" loading="lazy" decoding="async">
+                            <p class="promo-card__text">سفارش پیتزا از اسنپ فود</p>
+                            <a class="btn btn--outline btn--sm promo-card__btn" href="#">سفارش دهید</a>
+                        </div>
+                    </article>
+                    <article class="promo-card">
+                        <img class="promo-card__img" src="./img/banner/promo-food-2.webp" alt="سفارش کباب از اسنپ فود" loading="lazy" decoding="async">
+                        <div class="promo-card__body">
+                            <img class="promo-card__logo" src="./img/card/foodS.webp" alt="" width="50" height="48" loading="lazy" decoding="async">
+                            <p class="promo-card__text">سفارش کباب از اسنپ فود</p>
+                            <a class="btn btn--outline btn--sm promo-card__btn" href="#">سفارش دهید</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="promo-gallery" aria-labelledby="gallery-insurance-title">
+            <div class="container">
+                <h2 class="promo-gallery__title section-title" id="gallery-insurance-title">خرید به‌صرفه‌ی بیمه</h2>
+                <div class="promo-gallery__list">
+                    <article class="promo-card">
+                        <img class="promo-card__img" src="./img/banner/promo-14-0.webp" alt="خرید بیمه شخص ثالث خودرو" loading="lazy" decoding="async">
+                        <div class="promo-card__body">
+                            <img class="promo-card__logo" src="./img/card/bimehh.webp" alt="" width="50" height="48" loading="lazy" decoding="async">
+                            <p class="promo-card__text">بیمه ثالث خودرو</p>
+                            <a class="btn btn--outline btn--sm promo-card__btn" href="#">خرید کنید</a>
+                        </div>
+                    </article>
+                    <article class="promo-card">
+                        <img class="promo-card__img" src="./img/banner/promo-14-1.webp" alt="خرید بیمه بدنه خودرو" loading="lazy" decoding="async">
+                        <div class="promo-card__body">
+                            <img class="promo-card__logo" src="./img/card/bimehh.webp" alt="" width="50" height="48" loading="lazy" decoding="async">
+                            <p class="promo-card__text">بیمه بدنه</p>
+                            <a class="btn btn--outline btn--sm promo-card__btn" href="#">خرید کنید</a>
+                        </div>
+                    </article>
+                    <article class="promo-card">
+                        <img class="promo-card__img" src="./img/banner/promo-14-2.webp" alt="خرید بیمه موبایل" loading="lazy" decoding="async">
+                        <div class="promo-card__body">
+                            <img class="promo-card__logo" src="./img/card/bimehh.webp" alt="" width="50" height="48" loading="lazy" decoding="async">
+                            <p class="promo-card__text">بیمه موبایل</p>
+                            <a class="btn btn--outline btn--sm promo-card__btn" href="#">خرید کنید</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="promo-gallery" aria-labelledby="gallery-credit-title">
+            <div class="container">
+                <h2 class="promo-gallery__title section-title" id="gallery-credit-title">خرید اقساطی با سرویس اعتباری</h2>
+                <div class="promo-gallery__list">
+                    <article class="promo-card">
+                        <img class="promo-card__img" src="./img/banner/promo-17-0.webp" alt="خرید اقساطی با سرویس اعتباری اسنپ" loading="lazy" decoding="async">
+                        <div class="promo-card__body">
+                            <img class="promo-card__logo" src="./img/card/wallet.webp" alt="" width="50" height="48" loading="lazy" decoding="async">
+                            <p class="promo-card__text">در ۴ قسط بدون سود و کارمزد</p>
+                            <a class="btn btn--outline btn--sm promo-card__btn" href="#">خرید کنید</a>
+                        </div>
+                    </article>
+                    <article class="promo-card">
+                        <img class="promo-card__img" src="./img/banner/promo-17-1.webp" alt="خرید اقساطی با سرویس اعتباری اسنپ" loading="lazy" decoding="async">
+                        <div class="promo-card__body">
+                            <img class="promo-card__logo" src="./img/card/wallet.webp" alt="" width="50" height="48" loading="lazy" decoding="async">
+                            <p class="promo-card__text">در ۴ قسط بدون سود و کارمزد</p>
+                            <a class="btn btn--outline btn--sm promo-card__btn" href="#">خرید کنید</a>
+                        </div>
+                    </article>
+                    <article class="promo-card">
+                        <img class="promo-card__img" src="./img/banner/promo-17-2.webp" alt="خرید اقساطی با سرویس اعتباری اسنپ" loading="lazy" decoding="async">
+                        <div class="promo-card__body">
+                            <img class="promo-card__logo" src="./img/card/wallet.webp" alt="" width="50" height="48" loading="lazy" decoding="async">
+                            <p class="promo-card__text">در ۴ قسط بدون سود و کارمزد</p>
+                            <a class="btn btn--outline btn--sm promo-card__btn" href="#">خرید کنید</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="promo-gallery" aria-labelledby="gallery-travel-title">
+            <div class="container">
+                <h2 class="promo-gallery__title section-title" id="gallery-travel-title">مسافرت راحت با اسنپ</h2>
+                <div class="promo-gallery__list">
+                    <article class="promo-card">
+                        <img class="promo-card__img" src="./img/banner/promo-25-0.webp" alt="خرید آنلاین بلیط هواپیما" loading="lazy" decoding="async">
+                        <div class="promo-card__body">
+                            <img class="promo-card__logo" src="./img/card/airplane.webp" alt="" width="50" height="48" loading="lazy" decoding="async">
+                            <p class="promo-card__text">خرید آنلاین هواپیما</p>
+                            <a class="btn btn--outline btn--sm promo-card__btn" href="#">بیشتر بدانید</a>
+                        </div>
+                    </article>
+                    <article class="promo-card">
+                        <img class="promo-card__img" src="./img/banner/promo-25-1.webp" alt="رزرو آنلاین هتل" loading="lazy" decoding="async">
+                        <div class="promo-card__body">
+                            <img class="promo-card__logo" src="./img/card/home.webp" alt="" width="50" height="48" loading="lazy" decoding="async">
+                            <p class="promo-card__text">رزرو آنلاین هتل</p>
+                            <a class="btn btn--outline btn--sm promo-card__btn" href="#">بیشتر بدانید</a>
+                        </div>
+                    </article>
+                    <article class="promo-card">
+                        <img class="promo-card__img" src="./img/banner/promo-25-2.webp" alt="خرید آنلاین بلیط قطار" loading="lazy" decoding="async">
+                        <div class="promo-card__body">
+                            <img class="promo-card__logo" src="./img/card/trainS.webp" alt="" width="50" height="48" loading="lazy" decoding="async">
+                            <p class="promo-card__text">خرید آنلاین قطار</p>
+                            <a class="btn btn--outline btn--sm promo-card__btn" href="#">بیشتر بدانید</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog" id="blog" aria-labelledby="blog-title">
+            <div class="container">
+                <div class="blog__header">
+                    <h2 class="blog__title section-title" id="blog-title">تازه‌ترین‌های وبلاگ اسنپ</h2>
+                    <a class="btn btn--soft btn--sm" href="#">مطالب بیشتر در وبلاگ اسنپ</a>
+                </div>
+
+                <div class="blog__list">
+                    <article class="blog-card">
+                        <img class="blog-card__img" src="./img/banner/image_1_enhanced.webp" alt="" loading="lazy" decoding="async">
+                        <div class="blog-card__body">
+                            <h3 class="blog-card__title"><a href="#">سرویس «سفر اشتراکی» اسنپ، به‌صرفه‌تر و پایدارتر</a></h3>
+                            <p class="blog-card__text">سرویس سفر اشتراکی راهکاری مناسب برای کاهش هزینه‌ها، به‌ویژه در ساعات اوج ترافیک است.</p>
+                        </div>
+                    </article>
+                    <article class="blog-card">
+                        <img class="blog-card__img" src="./img/banner/image_2_enhanced.webp" alt="" loading="lazy" decoding="async">
+                        <div class="blog-card__body">
+                            <h3 class="blog-card__title"><a href="#">افزایش امنیت کاربران راننده اسنپ با سرویس «امنیت سفر»</a></h3>
+                            <p class="blog-card__text">اسنپ با معرفی سرویس «امنیت سفر» به کاربران مسافر این امکان را داده تا در صورت بروز هرگونه مشکل یا احساس ناامنی، به طور مستقیم با تیم امنیت سفر تماس بگیرند،...</p>
+                        </div>
+                    </article>
+                    <article class="blog-card">
+                        <img class="blog-card__img" src="./img/banner/png3.webp" alt="" loading="lazy" decoding="async">
+                        <div class="blog-card__body">
+                            <h3 class="blog-card__title"><a href="#">۱۶ باور اشتباه درباره سفرهای اسنپی</a></h3>
+                            <p class="blog-card__text">شاید هنگام استفاده از اسنپ سوال‌هایی برای‌تان پیش آمده باشد که پاسخش را نمی‌دانید؛...</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container container--footer">
+            <nav class="site-footer__links" aria-label="پیوندهای پایین صفحه">
+                <a class="site-footer__link" href="#">فرصت‌های شغلی</a>
+                <a class="site-footer__link" href="#blog">بلاگ</a>
+                <a class="site-footer__link" href="#">شرایط و قوانین</a>
+                <a class="site-footer__link" href="#">پنل سازمانی</a>
+                <a class="site-footer__link" href="#">سوالات متداول</a>
+                <a class="site-footer__link" href="#driver-benefits">باشگاه رانندگان</a>
+                <a class="site-footer__link" href="#driver-registration">ثبت نام راننده اسنپ</a>
+                <a class="site-footer__link" href="#">کد تخفیف اسنپ</a>
+                <a class="site-footer__link" href="#">درباره ما</a>
+                <a class="site-footer__link" href="#">تماس با ما</a>
+            </nav>
+
+            <div class="site-footer__bottom">
+                <div class="site-footer__social">
+                    <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="توییتر">
+                        <img class="site-footer__social-img" src="./img/Social/Twitter.webp" alt="" width="30" height="30" loading="lazy">
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="اینستاگرام">
+                        <img class="site-footer__social-img" src="./img/Social/Instagram.webp" alt="" width="30" height="30" loading="lazy">
+                    </a>
+                    <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="یوتیوب">
+                        <img class="site-footer__social-img" src="./img/Social/Youtube.webp" alt="" width="30" height="30" loading="lazy">
+                    </a>
+                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="لینکدین">
+                        <img class="site-footer__social-img" src="./img/Social/Linkedin-g-0.webp" alt="" width="30" height="30" loading="lazy">
+                    </a>
+                    <a href="https://web.telegram.org/" target="_blank" rel="noopener noreferrer" aria-label="تلگرام">
+                        <img class="site-footer__social-img" src="./img/Social/Telegram-g-0.webp" alt="" width="30" height="30" loading="lazy">
+                    </a>
+                </div>
+
+                <div class="site-footer__badges">
+                    <a href="#" aria-label="اتحادیه کسب‌وکارهای مجازی">
+                        <img class="site-footer__badge" src="./img/namad/logo.webp" alt="لوگوی اتحادیه کسب‌وکارهای مجازی" width="130" height="130" loading="lazy">
+                    </a>
+                    <a href="#" aria-label="نماد اعتماد الکترونیکی">
+                        <img class="site-footer__badge" src="./img/namad/namad.webp" alt="نماد اعتماد الکترونیکی" width="130" height="130" loading="lazy">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

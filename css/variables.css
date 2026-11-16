@@ -1,0 +1,93 @@
+:root {
+
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --color-green-500: #21aa58;
+    --color-green-700: #248a4a;
+    --color-green-promo: #00e161;
+    --color-blue-500: #575eff;
+    --color-blue-900: #0f1698;
+    --color-navy-900: #252a3c;
+    --color-gray-700: #3c3d40;
+    --color-gray-600: #686c79;
+    --color-gray-300: #abadb5;
+    --color-gray-200: #c9caceb2;
+    --color-gray-100: #f6f7fac9;
+    --color-green-tint: #00e1340c;
+    --color-green-tint-strong: #00e13415;
+    --color-lavender-100: #eeefff;
+    --color-surface-muted: #f2f3fba5;
+
+    --color-primary: var(--color-green-500);
+    --color-primary-hover: var(--color-green-700);
+    --color-on-primary: var(--color-white);
+    --color-accent: var(--color-blue-500);
+    --color-text: var(--color-navy-900);
+    --color-text-muted: var(--color-gray-600);
+    --color-border: var(--color-gray-300);
+    --color-border-soft: var(--color-gray-200);
+    --color-surface: var(--color-white);
+    --color-surface-alt: var(--color-lavender-100);
+    --color-promo-bg: var(--color-green-promo);
+    --color-on-promo: var(--color-navy-900);
+    --color-promo-link: var(--color-blue-900);
+    --color-tab-active-bg: var(--color-green-tint);
+
+    --space-1: 0.5rem;
+    --space-2: 1rem;
+    --space-3: 1.5rem;
+    --space-4: 2rem;
+    --space-5: 2.5rem;
+    --space-6: 3rem;
+    --space-8: 4rem;
+    --space-10: 5rem;
+    --space-12: 6rem;
+
+    --radius-sm: 0.5rem;
+    --radius-md: 1rem;
+    --radius-lg: 1.5rem;
+    --radius-pill: 999px;
+
+    --shadow-sm: 0 1px 2px var(--color-border);
+    --shadow-soft: 0 1px 2px var(--color-border-soft);
+    --shadow-card: 0 4px 16px var(--color-border-soft);
+    --shadow-dropdown: 0 8px 24px var(--color-border-soft);
+
+    --container-max: 78rem;
+    --container-max-footer: 70rem;
+    --container-padding: var(--space-2);
+    --control-height: 3.5rem;
+    --control-height-sm: 2.5rem;
+    --tap-target: 2.75rem;
+    --header-height-mobile: 4.5rem;
+    --header-height-desktop: 5rem;
+
+    --z-header: 100;
+    --z-dropdown: 110;
+
+    --font-family-base: "Vazirmatn", system-ui, sans-serif;
+    --font-family-heading: var(--font-family-base);
+
+    --font-weight-regular: 400;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --font-weight-extrabold: 800;
+
+    --font-size-sm: 0.875rem;
+    --font-size-base: 1rem;
+    --font-size-md: 1.125rem;
+    --font-size-lg: 1.5rem;
+
+    --font-size-xl: clamp(1.5rem, 1.2rem + 1.2vw, 2rem);
+
+    --line-height-base: 1.6;
+    --line-height-heading: 1.6;
+
+    --transition-base: 0.2s ease;
+}
+
+@media (min-width: 40rem) {
+    :root {
+        --container-padding: var(--space-3);
+    }
+}
